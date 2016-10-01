@@ -193,9 +193,9 @@ bar {
         	background $flat00
         	statusline $flat06
 #                                border  background text
-        	focused_workspace  $flat0D $flat0D $flat06
-        	active_workspace   $flat01 $flat01 $flat03
-        	inactive_workspace $flat01 $flat01 $flat03
+        	focused_workspace  $flat00 $flat00 $flat0D
+        	active_workspace   $flat00 $flat00 $flat03
+        	inactive_workspace $flat00 $flat00 $flat03
         	urgent_workspace   $flat08 $flat08 $flat06
     	}
 }
