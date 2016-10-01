@@ -16,12 +16,9 @@ MiscTabCloseMiddleClick=TRUE
 MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
-ColorForeground=#cdcdd3d3dede
-ColorBackground=#1b1b2b2b3434
-ColorCursor=#cdcdd3d3dede
-ColorBold=#93a1a1
-ColorBoldUseDefault=FALSE
-ColorPalette=#34343d3d4646;#ecec5f5f6767;#9999c7c79494;#fafac8c86363;#66669999cccc;#c5c59494c5c5;#5f5fb3b3b3b3;#cdcdd3d3dede;#1b1b2b2b3434;#f9f991915757;#4f4f5b5b6666;#656573737e7e;#66669999cccc;#abab79796767;#a7a7adadbaba;#d8d8dedee9e9
-TabActivityColor=#dc322f
+ColorForeground=#93a1a1
+ColorBackground=#002b36
+ColorCursor=#93a1a1
+ColorPalette=#002b36;#dc322f;#859900;#b58900;#268bd2;#6c71c4;#2aa198;#93a1a1;#657b83;#dc322f;#859900;#b58900;#268bd2;#6c71c4;#2aa198;#fdf6e3
 FontName=Hack 10
 
