@@ -80,6 +80,24 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# color list
+set $flat00 #002B36
+set $flat01 #073642
+set $flat02 #586E75
+set $flat03 #657B83
+set $flat04 #839496
+set $flat05 #93A1A1
+set $flat06 #EEE8D5
+set $flat07 #FDF6E3
+set $flat08 #B58900
+set $flat09 #CB4B16
+set $flat0A #DC322F
+set $flat0B #D33682
+set $flat0C #6C71C4
+set $flat0D #268BD2
+set $flat0E #2AA198
+set $flat0F #859900
+
 # workspace list
 set $ws1 1:terminal
 set $ws2 2:vim
@@ -152,10 +170,18 @@ mode "launch" {
 }
 bindsym $mod+u mode "launch"
 
-#gaps
+# gaps
 gaps inner 5
 gaps outer 0
-new_window 1pixel
+new_window pixel 2
+new_float pixel 2
+
+# colors
+# class                 border  backgr  indicator
+client.focused          #ffffff $flat0D #ffffff
+client.unfocused        #ffffff $flat01 #ffffff
+client.focused_inactive #ffffff $flat01 #ffffff
+client.urgent           #fffhff $flat08 #ffffff
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -163,4 +189,13 @@ bar {
 	status_command i3blocks
 	position top
 	strip_workspace_numbers yes
+	colors {
+        	background $flat00
+        	statusline $flat06
+#                                border  background text
+        	focused_workspace  $flat0D $flat0D $flat06
+        	active_workspace   $flat01 $flat01 $flat03
+        	inactive_workspace $flat01 $flat01 $flat03
+        	urgent_workspace   $flat08 $flat08 $flat06
+    	}
 }
