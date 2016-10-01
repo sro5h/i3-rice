@@ -100,8 +100,8 @@ set $flat0F #859900
 
 # workspace list
 set $ws1 1:
-set $ws2 2:
-set $ws3 3:
+set $ws2 2:
+set $ws3 3:
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
